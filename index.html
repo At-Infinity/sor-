@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sorry</title>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#d9d4cc;--paper:#fbf8f1;--ink:#26323f;--line:#c9d6e4;--margin:#d9847a;--muted:#6b7480;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15181d;--paper:#222831;--ink:#e8e4da;--line:#33404f;--margin:#a8625a;--muted:#8a929c}}
+:root[data-theme="dark"]{--bg:#15181d;--paper:#222831;--ink:#e8e4da;--line:#33404f;--margin:#a8625a;--muted:#8a929c}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Kalam','Segoe Print','Comic Sans MS',cursive;min-height:100vh;display:flex;justify-content:center;padding:clamp(16px,5vw,56px) 16px}
+.paper{width:100%;max-width:640px;background:var(--paper);padding:48px clamp(24px,6vw,56px) 48px clamp(44px,9vw,84px);position:relative;box-shadow:0 2px 0 rgba(0,0,0,.08),0 18px 40px rgba(0,0,0,.18);transform:rotate(-.6deg);
+background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 35px,var(--line) 35px,var(--line) 36px)}
+.paper::before{content:"";position:absolute;left:clamp(30px,6vw,60px);top:0;bottom:0;width:2px;background:var(--margin);opacity:.7}
+h1{font-size:clamp(28px,6.5vw,44px);line-height:1.2;margin:0 0 36px;font-weight:700;letter-spacing:.01em}
+p{font-size:clamp(18px,3.8vw,22px);line-height:36px;margin:0 0 36px;font-weight:400}
+.big{font-weight:700;font-size:clamp(22px,5vw,30px)}
+.sign{margin-top:36px;line-height:36px}
+.sign span{display:block}
+.hand{color:var(--muted);font-size:16px;margin-top:40px;line-height:36px}
+.l{opacity:0;animation:in .7s ease forwards}
+.l:nth-child(1){animation-delay:.2s}.l:nth-child(2){animation-delay:1.2s}.l:nth-child(3){animation-delay:2.4s}.l:nth-child(4){animation-delay:3.6s}.l:nth-child(5){animation-delay:4.8s}
+@keyframes in{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.l{opacity:1;animation:none}}
+</style>
+</head>
+<body>
+<main class="paper">
+  <h1 class="l">SORRY FOR WHATEVER I HAVE DONE.</h1>
+  <p class="l">Maybe I was wrong that I'm always right about things, but it turns out I was always wrong since the very beginning of my life.</p>
+  <p class="l big">I'M SORRY.</p>
+  <div class="sign l">
+    <span>Until we meet again,</span>
+    <span>BYE. I LOVE YOU.</span>
+    <span>TAKE CARE.</span>
+  </div>
+</main>
+</body>
+</html>
